@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: white;
+    display: flex;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f1f23;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-nav .nav-left, .top-nav .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.top-nav .nav-link {
+    margin-left: 10px;
+    color: #a970ff;
+    font-weight: bold;
+}
+
+.top-nav .nav-center {
+    display: flex;
+    align-items: center;
+}
+
+.top-nav input[type="text"] {
+    padding: 5px;
+    background-color: #2e2e33;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.sidebar {
+    width: 270px;
+    background-color: #1f1f23;
+    padding: 15px;
+    position: fixed;
+    top: 50px; /* Cách phần header */
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    z-index: 500;
+}
+
+.sidebar .section {
+    margin-bottom: 20px;
+}
+
+.sidebar h2 {
+    font-size: 14px;
+    color: #b8b8b8;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.sidebar .show-more {
+    font-size: 14px;
+    color: #a970ff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.chat-container {
+    width: 300px;
+    height: 93vh;
+    background-color: #333;
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 14px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+  flex-direction: column;
+  }
+  
+  .chat-header {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .chat-content {
+    padding: 10px;
+    flex-grow: 1; /* Làm phần content mở rộng */
+    overflow-y: auto;
+  }
+  
+  .chat-footer {
+    display: flex;
+    background-color: #444;
+    padding: 10px;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .chat-footer input {
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .chat-input {
+    display: flex;
+    gap: 8px; /* Khoảng cách giữa ô nhập liệu và nút */
+  }
+  
+  .chat-input input {
+    flex-grow: 1;
+    padding: 10px 14px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-color: #333;
+    color: #eee;
+    outline: none;
+    font-size: 14px;
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .chat-input input:focus {
+    background-color: #444;
+    border-color: #6e00ff;
+    box-shadow: 0 0 8px rgba(110, 0, 255, 0.5);
+  }
+  
+  .chat-input input::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .chat-input button {
+    padding: 10px 16px;
+    background-color: #6e00ff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .chat-input button:hover {
+    background-color: #5c00d6;
+  }
+
+  .chat-rules {
+    padding: 10px;
+    background-color: #222;
+  }
+  
+  .chat-message {
+    margin: 5px 0;
+    background-color: #555;
+    padding: 8px 12px;
+    margin: 8px 0;
+    border-radius: 10px;
+    max-width: 90%;
+    word-wrap: break-word;
+    font-size: 13px;
+    color: #ddd;
+  }
+  
+  .chat-message.user-message {
+    background-color: #9042f6;
+    color: #fff;
+    align-self: flex-end;
+  }
+
+  .chat-footer button {
+    background-color: #6e00ff;
+    color: #222;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .main-content {
+    display: flex;
+    justify-content: center; /* Căn giữa phần stream giữa sidebar và chat */
+    margin-left: 270px; /* Chừa khoảng cách bằng chiều rộng của sidebar */
+    padding-top: 50px; /* Đặt cách phần top-nav */
+    padding-right: 300px; /* Chừa khoảng cách bằng chiều rộng của chat-container */
+    width: 100%; /* Điều chỉnh để chiếm toàn bộ không gian giữa sidebar và chat */
+    background-image: src="stream-thumbnail1.jpg";
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Main Stream Area */
+.stream {
+    width: 100%;
+    padding: 20px;
+    background-color: #0e0e10;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa nội dung bên trong phần stream */
+}
+
+.video h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.video-content img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Đảm bảo ảnh lấp đầy khung mà không bị méo */
+}
+
+.channel-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.follow, .subscribe {
+    background-color: #9147ff;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.viewers {
+    color: #b9bbbe;
+    font-size: 14px;
+}
+
+.about h3 {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.about p {
+  font-size: 14px;
+  color: #b9bbbe;
+}
+
+/* Search tab */
+.search-dropdown {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 80%; /* Place it below the button */
+  background-color: #2e2e33;
+  border-radius: 5px;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  width: 170px;
+}
+
+.search-dropdown a {
+  display: block;
+  padding: 10px 15px;
+  color: #b9bbbe;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.search-dropdown a:hover {
+  background-color: #3b3b3d;
+  color: #ffffff;
+  border-radius: 3px;
+}

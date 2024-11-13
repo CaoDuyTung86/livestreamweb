@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: white;
+    padding: 20px;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f1f23;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-nav .nav-left, .top-nav .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.top-nav .nav-link {
+    margin-left: 10px;
+    color: #a970ff;
+    font-weight: bold;
+}
+
+.top-nav .nav-center {
+    display: flex;
+    align-items: center;
+}
+
+.top-nav input[type="text"] {
+    padding: 5px;
+    background-color: #2e2e33;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.sidebar {
+    width: 270px;
+    background-color: #1f1f23;
+    padding: 15px;
+    position: fixed;
+    top: 50px; /* Cách phần header */
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    z-index: 500;
+}
+
+.sidebar .section {
+    margin-bottom: 20px;
+}
+
+.sidebar h2 {
+    font-size: 14px;
+    color: #b8b8b8;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.sidebar .show-more {
+    font-size: 14px;
+    color: #a970ff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* style.css */
+.container {
+    margin-left: 270px; /* Đẩy sang phải của sidebar */
+    margin-top: 30px;
+    width: calc(100% - 270px);
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+/* Cài đặt cho Tabs */
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tab {
+    background-color: #3b3b3b;
+    color: #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.tab.active {
+    background-color: #5c5c5c;
+    color: #ffffff;
+}
+
+/* Các Mục Drops và Claimed */
+.drops, .claimed {
+    margin-top: 20px;
+}
+
+.drop-progress h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+/* Cài đặt cho Nút */
+.connect-btn, .info-btn {
+    background-color: #9147ff;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.connect-btn:hover, .info-btn:hover {
+    background-color: #7c3fd8;
+}
+
+/* Thanh Tiến Độ */
+.progress-bars {
+    display: flex;
+    flex-direction: column;
+}
+
+.progress-item {
+    margin-top: 10px;
+}
+
+.progress-bar {
+    background-color: #555;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 100%;
+    height: 8px;
+    margin: 5px 0;
+}
+
+.fill {
+    background-color: #9147ff;
+    height: 100%;
+}
+
+/* Mục Claimed */
+.claimed-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.claimed-item {
+    background-color: #3b3b3b;
+    padding: 10px;
+    border-radius: 5px;
+    flex: 1 1 100px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.claimed-item:hover {
+    background-color: #5c5c5c;
+}
+
+.checkmark {
+    display: block;
+    font-size: 16px;
+    color: green; /* Màu dấu tích */
+    margin-top: 5px; /* Khoảng cách giữa nội dung và dấu tích */
+}
+
+.campaign-item {
+    margin-bottom: 20px;
+}
+
+.join-campaign {
+    padding: 10px 20px;
+    background-color: #bb0be7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* Search tab */
+.search-dropdown {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 80%; /* Place it below the button */
+    background-color: #2e2e33;
+    border-radius: 5px;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 170px;
+  }
+  
+  .search-dropdown a {
+    display: block;
+    padding: 10px 15px;
+    color: #b9bbbe;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .search-dropdown a:hover {
+    background-color: #3b3b3d;
+    color: #ffffff;
+    border-radius: 3px;
+  }
