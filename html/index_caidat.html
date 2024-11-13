@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Streams</title>
+    <link rel="stylesheet" href="style_caidat.css">
+</head>
+<body>
+    <header class="top-nav">
+        <div class="nav-left">
+            <button class="logo">🏠</button>
+            <button class="nav-link">Following</button>
+            <button class="nav-link">Browse</button>
+        </div>
+        <div class="nav-center">
+            <input type="text" placeholder="Search...">
+        <button id="searchBtn">🔍</button>
+        <div class="search-dropdown" id="searchDropdown">
+            <a href="#">Tarik</a>
+            <a href="#">Tenz</a>
+            <a href="#">Noway</a>
+            <a href="#">DEV Nguyen</a>
+        </div>
+        </div>
+        <div class="nav-right">
+            <button>🔔</button>
+            <button>✉️</button>
+            <button>💬</button>
+            <button>🎥 Get Ad-Free</button>
+            <button>Login</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Thanh Dashboard bên trái -->
+            <div class="sidebar">
+                <div class="sidebar">
+                    <h2>CREATOR DASHBOARD</h2>
+                    <a href="#" class="active"><span class="icon">🏠</span> Home</a>
+                    <a href="#"><span class="icon">📺</span> Stream Manager</a>
+                    <a href="#"><span class="icon">🔔</span> Alerts <span class="new">NEW</span></a>
+
+                    <a href="#" class="toggle" data-target="analyticsSubmenu"><span class="icon">📊</span> Analytics <span class="▼">▼</span></a>
+                    <div class="submenu" id="analyticsSubmenu">
+                        <a href="#">Overview</a>
+                        <a href="#">Revenue</a>
+                        <a href="#">Engagement</a>
+                    </div>
+
+                    <a href="#" class="toggle" data-target="communitySubmenu"><span class="icon">👥</span> Community <span class="▼">▼</span></a>
+                    <div class="submenu" id="communitySubmenu">
+                        <a href="#">Moderation</a>
+                        <a href="#">Followers</a>
+                        <a href="#">Chat Settings</a>
+                    </div>
+
+                    <a href="#" class="toggle" data-target="contentSubmenu"><span class="icon">📂</span> Content <span class="▼">▼</span></a>
+                    <div class="submenu" id="contentSubmenu">
+                        <a href="#">Videos</a>
+                        <a href="#">Clips</a>
+                        <a href="#">Highlights</a>
+                    </div>
+
+                    <a href="#" class="toggle" data-target="settingsSubmenu"><span class="icon">⚙️</span> Settings <span class="▼">▼</span></a>
+                    <div class="submenu" id="settingsSubmenu">
+                        <a href="#">Account</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Notifications</a>
+                    </div>
+
+                    <a href="#" class="toggle" data-target="viewerRewardsSubmenu"><span class="icon">🎁</span> Viewer Rewards <span class="▼">▼</span></a>
+                    <div class="submenu" id="viewerRewardsSubmenu">
+                        <a href="#">Points</a>
+                        <a href="#">Emotes</a>
+                        <a href="#">Badges</a>
+                    </div>
+
+                    <a href="#"><span class="icon">🤝</span> Stream Together <span class="new">NEW</span></a>
+                    <a href="#"><span class="icon">🛠️</span> Streaming Tools</a>
+                    <a href="#"><span class="icon">🧩</span> Extensions</a>
+                    <a href="#" class="external"><span class="icon">📘</span> Creator Camp</a>
+                    <a href="#" class="external"><span class="icon">🛡️</span> Safety Center</a>
+                </div>
+            </div>
+        <!--header-->
+        <div class="header-bar">
+            <h3>HELLO CREATORS</h3>
+        </div>
+
+        <!-- Left Panel --> 
+        <div class="left-panel">
+            <h2>Start Streaming with Twitch Studio</h2>
+            <p>If you're streaming from a computer, you need software that broadcasts your content to Twitch so your audience can see it.</p>
+            <p>Don't worry, we've got you! Twitch Studio is FREE and easy to use. Simply download and start streaming!</p>
+            <button>Download Twitch Studio</button>
+            <img src="twitchLive.jpg" alt="Twitch Studio Preview">
+        </div>
+
+        <!-- Right Panel -->
+        <div class="right-panel">
+            <h2>Your Action Items</h2>
+            <p>Your journey begins here. Unlock new action items as you grow.</p>
+            <hr>
+            <div class="action-items">
+                <div>
+                    <button><i>⚙️</i></button>
+                    <span>Set Up</span>
+                </div>
+                <div>
+                    <button><i>👤</i></button>
+                    <span>About Me</span>
+                </div>
+                <div>
+                    <button><i>🔍</i></button>
+                    <span>Discovery</span>
+                </div>
+                <div>
+                    <button><i>📡</i></button>
+                    <span>Go Live</span>
+                </div>
+            </div>
+            <hr>
+
+            <h2>Set Up Your Hardware and Software</h2>
+            <p>You don't need much to get started, just these few basic things!</p>
+
+            <div class="setup-steps">
+                <img src="icon.jpg" alt="Twitch Studio Preview">
+                <p>The computer you'll stream from, or a game console</p>
+                <div class="step-nav">
+                    <div class="active"></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>  
+
+    </div>
+    <script src="script_caidat.js"></script>
+</body>
+</html>            

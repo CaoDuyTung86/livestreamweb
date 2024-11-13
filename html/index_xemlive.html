@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Streams</title>
+    <link rel="stylesheet" href="style_xemlive.css">
+</head>
+<body>
+    <header class="top-nav">
+        <div class="nav-left">
+            <button class="logo">🏠</button>
+            <button class="nav-link">Following</button>
+            <button class="nav-link">Browse</button>
+        </div>
+        <div class="nav-center">
+            <input type="text" placeholder="Search...">
+        <button id="searchBtn">🔍</button>
+        <div class="search-dropdown" id="searchDropdown">
+            <a href="#">Tarik</a>
+            <a href="#">Tenz</a>
+            <a href="#">Noway</a>
+            <a href="#">DEV Nguyen</a>
+        </div>
+        </div>
+        <div class="nav-right">
+            <button>🔔</button>
+            <button>✉️</button>
+            <button>💬</button>
+            <button>🎥 Get Ad-Free</button>
+            <button>Login</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Thanh kênh bên trái -->
+            <div class="sidebar">
+                <div class="section">
+                    <h2>FOLLOWED CHANNELS</h2>
+                    <ul>
+                        <li>shainatra - 3.9K viewers - Valorant 🔴</li>
+                        <li>Subroza - 2.4K viewers - Valorant 🔴</li>
+                        <li>Castro - 1.2K viewers - CS:GO 🔴</li>
+                        <li>schrodingerLee - 1K viewers - Valorant 🔴</li>
+                        <li>Gaedrel - Offline</li>
+                    </ul>
+                    <button class="show-more">Show More</button>
+                </div>
+                <div class="section">
+                    <h2>RECOMMENDED CHANNELS</h2>
+                    <ul>
+                        <li>shanks - 1.8K viewers - Valorant 🔴</li>
+                        <li>Emmyuh - 311 viewers - Valorant 🔴</li>
+                        <li>joshkei - 3.1K viewers - Valorant 🔴</li>
+                        <li>ShivFPS - 1.9K viewers - Apex Legends 🔴</li>
+                        <li>HisiWatson - 7.3K viewers - Apex Legends 🔴</li>
+                        <li>Woohoojin - 24 viewers - Valorant 🔴</li>
+                    </ul>
+                    <button class="show-more">Show More</button>
+                </div>
+            </div>
+
+        <!-- Thanh chat bên phải -->
+    <div class="chat-container">
+        <div class="chat-header">
+          <h3>STREAM CHAT</h3>
+        </div>
+        <div class="chat-content" id="chatContent">
+          <p class="chat-message"><strong>Fossabot:</strong> Tarik will be traveling to LA</p>
+          <p class="chat-message"><strong>archiesasthana:</strong> sarvi</p>
+          <p class="chat-message"><strong>Fossabot:</strong> NEW YOUTUBE VIDEO</p>
+        </div>
+        <div class="chat-rules" id="chatRules">
+          <h4>CHAT RULES</h4>
+          <ul>
+            <li>Kein Rassismus</li>
+            <li>Keine Beleidigung</li>
+            <li>Keine Links</li>
+            <li>Sei nett zu anderen Leuten</li>
+          </ul>
+          <div class="chat-footer">
+            <button onclick="hideChatRules()">Okay, Got It!</button>
+          </div>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <!-- Tin nhắn chat sẽ được hiển thị ở đây -->
+          </div>
+          <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="sendMessage">
+            <button onclick="sendMessage()">Send</button>
+          </div>
+      </div>
+        
+        <!-- Main Stream Area -->
+        <div class="main-content">
+          <div class="stream">
+            <div class="video">
+                <div class="video-content">
+                    <img src="stream-thumbnail1.jpg" alt="Stream Thumbnail">
+                </div>
+                <div class="channel-info">
+                    <button class="follow">Follow</button>
+                    <button class="subscribe">Subscribe</button>
+                    <span class="viewers">12,006 viewers</span>
+                </div>
+                <div class="about">
+                    <h3>TSM Subroza</h3>
+                    <p>27 y/o Pro VALORANT Player for @TSM | Streamer </p>
+                    <p>Business Inquires: teamsubroza@unitedtalent.com </p>
+                </div>
+            </div>
+          </div>
+        </div>
+       
+    </div>
+    <script src="script_xemlive.js"></script>
+</body>
+</html>

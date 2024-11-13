@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Streams</title>
+    <link rel="stylesheet" href="style_nhanqua.css">
+</head>
+<body>
+    <header class="top-nav">
+        <div class="nav-left">
+            <button class="logo">🏠</button>
+            <button class="nav-link">Following</button>
+            <button class="nav-link">Browse</button>
+        </div>
+        <div class="nav-center">
+          <input type="text" placeholder="Search...">
+      <button id="searchBtn">🔍</button>
+      <div class="search-dropdown" id="searchDropdown">
+          <a href="#">Tarik</a>
+          <a href="#">Tenz</a>
+          <a href="#">Noway</a>
+          <a href="#">DEV Nguyen</a>
+      </div>
+      </div>
+        <div class="nav-right">
+            <button>🔔</button>
+            <button>✉️</button>
+            <button>💬</button>
+            <button>🎥 Get Ad-Free</button>
+            <button>Login</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Thanh kênh bên trái -->
+            <div class="sidebar">
+                <div class="section">
+                    <h2>FOLLOWED CHANNELS</h2>
+                    <ul>
+                        <li>shainatra - 3.9K viewers - Valorant 🔴</li>
+                        <li>Subroza - 2.4K viewers - Valorant 🔴</li>
+                        <li>Castro - 1.2K viewers - CS:GO 🔴</li>
+                        <li>schrodingerLee - 1K viewers - Valorant 🔴</li>
+                        <li>Gaedrel - Offline</li>
+                    </ul>
+                    <button class="show-more">Show More</button>
+                </div>
+                <div class="section">
+                    <h2>RECOMMENDED CHANNELS</h2>
+                    <ul>
+                        <li>shanks - 1.8K viewers - Valorant 🔴</li>
+                        <li>Emmyuh - 311 viewers - Valorant 🔴</li>
+                        <li>joshkei - 3.1K viewers - Valorant 🔴</li>
+                        <li>ShivFPS - 1.9K viewers - Apex Legends 🔴</li>
+                        <li>HisiWatson - 7.3K viewers - Apex Legends 🔴</li>
+                        <li>Woohoojin - 24 viewers - Valorant 🔴</li>
+                    </ul>
+                    <button class="show-more">Show More</button>
+                </div>
+            </div>
+
+            <!-- Drop and Rewards-->
+            <h1>Drops & Rewards</h1>
+
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="tab active" id="inventoryTab">Inventory</button>
+                <button class="tab" id="campaignsTab">All Campaigns</button>
+            </div>
+          
+            <!-- Content Section -->
+            <div class="content">
+                <div id="inventoryContent">
+                    <h2>Drops</h2>
+                    <p>Drops you have receiver are accessed within their corresponding games. Log into the game to experience your new content.You may have a limited time to connect
+                      accounts and redeem your Drops. You can manage your connections here. Learn more about Drops. </p>  
+                      <p> </p>
+                    <h2>In Progress</h2>
+                    <p>See how close you are to completing Drops that ask you to watch streams. Claim the Drop 
+                      when you have watched 100% of the required time in any eligible channel.
+                    </p>
+                    <div class="drop-progress">
+                      <h3>Open Beta Drops</h3>
+                      <p>End Date: Mon, Nov 6, 2:00 AM GMT-3</p>
+                      <p>To continue the progress, go to a participating live channel.</p>
+                      <button class="connect-btn">Connect</button>
+                      <button class="info-btn">About This Drop</button>
+                      <div class="progress-bars">
+                        <div class="progress-item">
+                          <div class="item-title">Playing with friends</div>
+                          <div class="progress-bar"><div class="fill" style="width: 2%;"></div></div>
+                          <p>2% of 2 hours</p>
+                        </div>
+                        <div class="progress-item">
+                          <div class="item-title">Watch Steam in 4 hour</div>
+                          <div class="progress-bar"><div class="fill" style="width: 1%;"></div></div>
+                          <p>1% of 4 hours</p>
+                        </div>
+                        <div class="progress-item">
+                          <div class="item-title">Chat 30 messages</div>
+                          <div class="progress-bar"><div class="fill" style="width: 10%;"></div></div>
+                          <p>10% of 30 messages</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--campaigns-->
+                  <div id="campaignsContent" style="display: none;">
+                      <h2>All Campaigns</h2>
+                      <p>Discover the latest campaigns and events that you can participate in to earn rewards!</p>
+                      
+                      <div class="campaign-item">
+                          <h3>Campaign 1</h3>
+                          <p>Join this campaign and watch streams to unlock exclusive rewards!</p>
+                          <button class="join-campaign">Join Campaign</button>
+                      </div>
+                      
+                      <div class="campaign-item">
+                          <h3>Campaign 2</h3>
+                          <p>Watch 10 hours of gameplay to earn the special prize.</p>
+                          <button class="join-campaign">Join Campaign</button>
+                      </div>
+                      
+                      <div class="campaign-item">
+                          <h3>Campaign 3</h3>
+                          <p>Get involved in this campaign by chatting with streamers and win exclusive gear.</p>
+                          <button class="join-campaign">Join Campaign</button>
+                      </div>
+
+                      <div class="campaign-item">
+                        <h3>Campaign 4</h3>
+                        <p>Stream 8 hours.</p>
+                        <button class="join-campaign">Join Campaign</button>
+                    </div>
+
+                  </div>
+            </div>
+          
+            <!-- Claimed Section -->
+            <div class="claimed" id="claimedContent">
+              <h2>Claimed</h2>
+              <div class="claimed-items">
+                <div class="claimed-item">
+                  Champions Lowrider Card
+                  <span class="checkmark">✓</span>
+                </div>
+                <div class="claimed-item">
+                  Lowrider Title
+                  <span class="checkmark">✓</span>
+                </div>
+                <div class="claimed-item">
+                  Gekko Diff Spray
+                  <span class="checkmark">✓</span>
+                </div>
+                <div class="claimed-item">
+                  Rank Up! Card
+                  <span class="checkmark">✓</span>
+                </div>
+                <div class="claimed-item">
+                  Unpredictable Title
+                  <span class="checkmark">✓</span>
+                </div>
+                <div class="claimed-item">
+                  LOCK//IN Dad Hat Buddy
+                  <span class="checkmark">✓</span>
+                </div>
+              </div>  
+            </div>  
+            
+            <div class="rewards" id="rewardsContent">
+                <h2>Rewards</h2>
+                <p>Rewards are limited-time offers from top brands that you can unlock by supporting Twitch creators.
+                    You can see currently available rewards, offer details, and access your redemption codes here.
+                </p>
+            </div>
+    </div>
+    <script src="script_nhanqua.js"></script>
+</body>
+</html>        
