@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Channel Dashboard</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #18181b;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 220px;
+            background-color: #0e0e10;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #adadb8;
+        }
+
+        .sidebar ul li:hover {
+            color: #ffffff;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 240px;
+            padding: 30px;
+        }
+
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background-color: #2e2e33;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #3e3e42;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .card p {
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #b9bbbe;
+        }
+
+        /* Profile Picture Section */
+        .upload-btn {
+            background-color: #9147ff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .upload-btn:hover {
+            background-color: #772ce8;
+        }
+
+        .input-file {
+            background-color: #333;
+            border: 1px solid #555;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        /* Accent Color Picker */
+        .color-picker {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .color-picker input[type="color"] {
+            margin-right: 10px;
+            width: 50px;
+            height: 50px;
+            border: none;
+        }
+
+        .theme-preview {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .theme-card {
+            width: 48%;
+            background-color: #1f1f23;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .theme-card img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        /* Profile Banner Section */
+        .banner-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .radio-options {
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+        }
+
+        .radio-options label {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .radio-options input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        /* Buttons */
+        .save-btn {
+            background-color: #9147ff;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .save-btn:hover {
+            background-color: #772ce8;
+        }
+        
+        /* Video Player Banner Section */
+        .video-banner-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <h1>Channel</h1>
+    <ul>
+        <li>Home</li>
+        <li>Stream Manager</li>
+        <li>Analytics</li>
+        <li>Community</li>
+        <li>Content</li>
+        <li>Settings</li>
+        <li>Stream</li>
+        <li>Channel</li>
+    </ul>
+</div>
+
+<!-- Main Content -->
+<div class="main-content">
+    <h1 class="section-title">Brand</h1>
+
+    <!-- Profile Picture Section -->
+    <div class="card">
+        <h2>Profile Picture</h2>
+        <p>Must be JPEG, PNG, or GIF and cannot exceed 10MB.</p>
+        <input type="file" class="input-file">
+        <button class="upload-btn">Upload</button>
+    </div>
+
+    <!-- Profile Accent Color Section -->
+    <div class="card">
+        <h2>Profile Accent Color</h2>
+        <p>Choose an accent color to highlight your brand around Twitch and your channel elements.</p>
+        <div class="color-picker">
+            <input type="color" value="#8259ff">
+            <span>#8259ff</span>
+        </div>
+        <div class="theme-preview">
+            <div class="theme-card">
+                <img src="https://via.placeholder.com/150" alt="Light Theme">
+                <p>Light Theme</p>
+            </div>
+            <div class="theme-card">
+                <img src="https://via.placeholder.com/150" alt="Dark Theme">
+                <p>Dark Theme</p>
+            </div>
+        </div>
+        <button class="save-btn">Save Changes</button>
+    </div>
+
+    <!-- Profile Banner Section -->
+    <div class="card banner-section">
+        <h2>Profile Banner</h2>
+        <div class="radio-options">
+            <label><input type="radio" name="banner" checked> Generated Background</label>
+            <label><input type="radio" name="banner"> Custom Image</label>
+        </div>
+        <input type="file" class="input-file">
+        <button class="save-btn">Save</button>
+    </div>
+
+    <!-- Video Player Banner Section -->
+    <div class="card video-banner-section">
+        <h2>Video Player Banner</h2>
+        <input type="file" class="input-file">
+        <button class="save-btn">Update</button>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Channel Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #18181B;
+            color: #fff;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background-color: #0E0E10;
+            width: 250px;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            margin-top: 20px;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebar ul li img {
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* Main content */
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            background-color: #9147FF;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Video section */
+        .video-section {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .video {
+            background-color: #27272A;
+            width: 48%;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .video img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .video p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #B3B3B3;
+        }
+
+        /* Recent broadcasts */
+        .recent-broadcasts {
+            margin-top: 20px;
+        }
+
+        .recent-broadcasts h3 {
+            margin-bottom: 15px;
+        }
+
+        .broadcast-list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .broadcast-item {
+            width: 23%;
+            background-color: #27272A;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .broadcast-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .broadcast-item p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #B3B3B3;
+        }
+
+        /* Categories */
+        .categories {
+            margin-top: 20px;
+        }
+
+        .categories h3 {
+            margin-bottom: 15px;
+        }
+
+        .category-list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .category-item {
+            width: 23%;
+            background-color: #27272A;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .category-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .category-item p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #B3B3B3;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul>
+            <li><img src="https://i.imgur.com/bpeX1LZ.jpg" alt="Image from Imgur"><a href="#">VALORANT_America</a></li>
+            <li><img src="https://via.placeholder.com/30" alt="User Icon"><a href="#">shroud</a></li>
+            <li><img src="https://via.placeholder.com/30" alt="User Icon"><a href="#">Stewie2k</a></li>
+            <li><img src="https://via.placeholder.com/30" alt="User Icon"><a href="#">Hiko</a></li>
+            <li><img src="https://via.placeholder.com/30" alt="User Icon"><a href="#">PROD</a></li>
+            <li><img src="https://via.placeholder.com/30" alt="User Icon"><a href="#">Kyedae</a></li>
+        </ul>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <div class="header">
+            tarik - Stream Offline
+        </div>
+
+        <!-- Video section -->
+        <div class="video-section">
+            <div class="video">
+                <img src="https://via.placeholder.com/400x200" alt="Video Thumbnail">
+                <p>Check out this VALORANT stream from 2 days ago.</p>
+            </div>
+            <div class="video">
+                <img src="https://via.placeholder.com/400x200" alt="Video Thumbnail">
+                <p>Valorant Gameplay</p>
+            </div>
+        </div>
+
+        <!-- Recent broadcasts -->
+        <div class="recent-broadcasts">
+            <h3>Recent broadcasts</h3>
+            <div class="broadcast-list">
+                <div class="broadcast-item">
+                    <img src="https://via.placeholder.com/150x100" alt="Broadcast Thumbnail">
+                    <p>Sentinels Invitational - 2 days ago</p>
+                </div>
+                <div class="broadcast-item">
+                    <img src="https://via.placeholder.com/150x100" alt="Broadcast Thumbnail">
+                    <p>Sentinels Invitational - 2 days ago</p>
+                </div>
+                <div class="broadcast-item">
+                    <img src="https://via.placeholder.com/150x100" alt="Broadcast Thumbnail">
+                    <p>Sentinels Invitational - 2 days ago</p>
+                </div>
+                <div class="broadcast-item">
+                    <img src="https://via.placeholder.com/150x100" alt="Broadcast Thumbnail">
+                    <p>Sentinels Invitational - 2 days ago</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="categories">
+            <h3>tarik's recently streamed Categories</h3>
+            <div class="category-list">
+                <div class="category-item">
+                    <img src="https://via.placeholder.com/150x100" alt="Category Thumbnail">
+                    <p>VALORANT</p>
+                </div>
+                <div class="category-item">
+                    <img src="https://via.placeholder.com/150x100" alt="Category Thumbnail">
+                    <p>DON'T SCREAM</p>
+                </div>
+                <div class="category-item">
+                    <img src="https://via.placeholder.com/150x100" alt="Category Thumbnail">
+                    <p>Fears to Fathom</p>
+                </div>
+                <div class="category-item">
+                    <img src="https://via.placeholder.com/150x100" alt="Category Thumbnail">
+                    <p>Counter-Strike</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
